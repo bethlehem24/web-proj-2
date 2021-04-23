@@ -1,0 +1,145 @@
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+    --Poppins: 'Poppins', sans-serif;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  button:focus,
+  input:focus {
+    outline: 0;
+  }
+  button {
+    cursor: pointer;
+  }
+  body {
+    font-size: 16px;
+    font-family: var(--Poppins);
+    color: white;
+    font-size: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+  .container {
+    background: var(--Red) url("imge/bg-intro-desktop.png") no-repeat
+      center/cover;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+  }
+  .learn {
+    width: 50%;
+    margin-right: 5%;
+  }
+    
+ .learn h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3em;
+   
+
+  }
+  
+  .signup {
+    width: 40%;
+  }
+  .signup .tryfree {
+    font-family: inherit;
+    width: 100%;
+    background-color: var(--Blue);
+    padding: 3% 0%;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 300;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.3);
+    color: var(--white);
+    
+  }
+  
+  .signup .signupform {
+    margin-top: 20px;
+    display: block;
+    background-color: white;
+    padding: 3% 8%;
+    width: 100%;
+    border-radius: 10px;
+    
+  }
+  .signupform input {
+    display: block;
+    margin-top: 5%;
+    padding: 3% 8%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--Blue);
+  }
+  .signupform .claimbtn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 3% 0%;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 0;
+    background-color: var(--Green);
+    font-family: inherit;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+  .signupform .claimbtn:hover {
+    color: var(--Green);
+    border: 1px solid var(--DarkBlue);
+    background-color: white;
+  }
+  .signupform p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.7em;
+    color: rgb(192, 192, 192);
+  }
+  .signupform p a {
+    text-decoration: none;
+    color: var(--Red);
+    padding-left: 2px;
+  }
+ 
+ 
+  @media screen and (max-width: 375px) {
+    body {
+      font-size: 0.8em;
+    }
+   
+    .main {
+      flex-direction: column;
+      align-content: space-between;
+    }
+    .learn {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .signup {
+      width: 100%;
+    }
+    .container {
+      padding: 5% 0%;
+    }
+    .signupform .claimbtn {
+      font-size: 1.2em;
+    }
+  }
